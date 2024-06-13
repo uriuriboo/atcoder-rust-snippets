@@ -1,0 +1,26 @@
+{
+  "name": "atcoder-rust-snippets",
+  "displayName": "atcoder-rust-snippets",
+  "publisher": "rokkouribo",
+  "repository": {
+    "url": "https://github.com/uriuriboo/atcoder-rust-snippets",
+    "type": "git"
+  },
+  "icon": "image/icon.png",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "rust",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
