@@ -36,7 +36,7 @@ The available snippets are as follows.
 
 ## License
 
-The source code is licensed under the Apache License, Version 2.0, January 2004.
+The source code is licensed under the [Apache License](https://github.com/uriuriboo/atcoder-rust-snippets/blob/main/LICENSE), Version 2.0, January 2004.
 
 ## Versioning
 
