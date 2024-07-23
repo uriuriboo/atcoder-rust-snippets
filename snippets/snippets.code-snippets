@@ -22,26 +22,64 @@
         ],
         "description": "template"
     },
-    "printans": {
+    "atcoder_n_m_template": {
+        "prefix": "nmtmplt",
+        "body": [
+            "#![allow(unused_imports, dead_code)]",
+            "use proconio::{marker::*, *};",
+            "use num_integer::*;",
+            "use num_traits::*;",
+            "use superslice::*;",
+            "use std::{cmp::*, collections::*, *};",
+            "#[allow(dead_code)]",
+            "const MOD: usize = 998244353;\n",
+            "#[fastout]",
+            "fn main(){",
+            "\tlet mut ans:usize = 0;",
+            "\tinput!{",
+            "\t\tn:usize,",
+            "\t\ta:[usize;n]",
+            "\t}\n",
+            "\tlet mut v = vec![vec![$1;n];m];\n",
+            "\tprintln!(\"{}\",ans);",
+            "}"
+        ],
+        "description": "template for handling n and m"
+    },
+    "outputans": {
         "prefix": "oans",
         "body": [
             "println!(\"{}\",ans);"
         ],
         "description": "output ans"
     },
-    "printYes": {
+    "outputYes": {
         "prefix": "oY",
         "body": [
             "println!(\"Yes\");"
         ],
         "description": "output Yes"
     },
-    "printNo": {
+    "outputyes": {
+        "prefix": "oy",
+        "body": [
+            "println!(\"yes\");"
+        ],
+        "description": "output yes"
+    },
+    "outputNo": {
         "prefix": "oN",
         "body": [
             "println!(\"No\");"
         ],
         "description": "output No"
+    },
+    "outputno": {
+        "prefix": "on",
+        "body": [
+            "println!(\"no\");"
+        ],
+        "description": "output no"
     },
     "bitsearch": {
         "prefix": "pbit",
@@ -91,5 +129,67 @@
             "}"
         ],
         "description": "double loop"
-    }
+    },
+    "vec_usize": {
+        "prefix": "vusi",
+        "body": [
+            "let $1: Vec<usize> = vec![$2; $3];"
+        ],
+        "description": "vector of usize"
+    },
+    "vec_isize": {
+        "prefix": "visi",
+        "body": [
+            "let $1: Vec<isize> = vec![$2; $3];"
+        ],
+        "description": "vector of isize"
+    },
+    "vec_f64": {
+        "prefix": "vf64",
+        "body": [
+            "let $1: Vec<f64> = vec![$2; $3];"
+        ],
+        "description": "vector of f64"
+    },
+    "hash_map": {
+        "prefix": "hmap",
+        "body": [
+            "let mut $1: HashMap<$2, $3> = HashMap::new();"
+        ],
+        "description": "HashMap"
+    },
+    "isPrime": {
+        "prefix": "isP",
+        "body": [
+            "fn is_prime(n: usize) -> bool {",
+            "\tif n < 2 { return false; }",
+            "\tif n == 2 { return true; }",
+            "\tif n % 2 == 0 { return false; }",
+            "\tfor i in (3..).step_by(2).take_while(|i| i * i <= n) {",
+            "\t\tif n % i == 0 { return false; }",
+            "\t}",
+            "\ttrue",
+            "}"
+        ],
+        "description": [
+            "Prime number determination",
+            "Determines if n is a prime number and returns a boolean."
+        ]
+    },
+    "vector<vector<T>>": {
+    "prefix": "vv",
+    "body": "let mut $2: Vec<Vec<$1>> = vec![vec![$1; $4]; $3];\n",
+    "description": "two-dimensional array"
+    },
+    "HashMap<usize,usize>": {
+    "prefix": "mpuu",
+    "body": "HashMap;\nlet mut $1: HashMap<usize, usize> = HashMap::new();\n",
+    "description": "HashMap<usize, usize>"
+    },
+    "HashMap<isize,isize>": {
+    "prefix": "mpii",
+    "body": "HashMap;\nlet mut $1: HashMap<isize, isize> = HashMap::new();\n",
+    "description": "HashMap<isize, isize>"
+    },
+
 }
