@@ -1,12 +1,12 @@
 # atcoder-rust-snippets
 
+This is a Rust snippet for AtCoder.
+
 ## Usage
 
 After installation, open a Rust file and enter the Prefix from the [Feature](#features).
 
 ## Features
-
-This is a Rust snippet for AtCoder.
 
 You can use output and frequently used variables.
 
